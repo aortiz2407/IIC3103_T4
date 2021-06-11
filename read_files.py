@@ -22,7 +22,8 @@ indicadores_de_peso = ["Mean BMI (crude estimate)", "Mean BMI (kg/m&#xb2;) (crud
                        "Prevalence of underweight among adults, BMI < 18.5 (age-standardized estimate) (%)",
                        "Prevalence of thinness among children and adolescents, BMI < -2 standard deviations below the median (crude estimate) (%)"]
 
-otros_indicadores = ["Estimate of daily cigarette smoking prevalence (%)",
+otros_indicadores = ["Alcohol, recorded per capita (15+) consumption (in litres of pure alcohol)",
+                      "Estimate of daily cigarette smoking prevalence (%)",
                      "Estimate of daily tobacco smoking prevalence (%)",
                      "Estimate of current cigarette smoking prevalence (%)",
                      "Estimate of current tobacco smoking prevalence (%)",
