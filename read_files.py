@@ -6,7 +6,7 @@ import xml.etree.ElementTree as Et
 # INDICADORES A FILTRAR ---------------------------------------------------------------------------------------------
 indicadores_de_muerte = ["Number of deaths", "Number of infant deaths", "Number of under-five deaths",
                     "Mortality rate for 5-14 year-olds (probability of dying per 1000 children aged 5-14 years)",
-                    "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population",
+                    "Adult mortality rate (probability of dying between 15 and 60 years per 1000 population)",
                     "Estimates of number of homicides", "Crude suicide rates (per 100 000 population)",
                     "Mortality rate attributed to unintentional poisoning (per 100 000 population)",
                     "Number of deaths attributed to non-communicable diseases, by type of disease and sex",
