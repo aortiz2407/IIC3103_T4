@@ -20,7 +20,9 @@ indicadores_de_peso = ["Mean BMI (crude estimate)", "Mean BMI (kg/m&#xb2;) (crud
                        "Prevalence of overweight among adults, BMI > 25 (age-standardized estimate) (%)",
                        "Prevalence of overweight among children and adolescents, BMI > +1 standard deviations above the median (crude estimate) (%)",
                        "Prevalence of underweight among adults, BMI < 18.5 (age-standardized estimate) (%)",
-                       "Prevalence of thinness among children and adolescents, BMI < -2 standard deviations below the median (crude estimate) (%)"]
+                       "Prevalence of thinness among children and adolescents, BMI < -2 standard deviations below the median (crude estimate) (%)",
+                       "Prevalence of overweight among adults, BMI &GreaterEqual; 25 (age-standardized estimate) (%)",
+                       "Prevalence of underweight children under 5 years of age   (% weight-for-age <-2 SD) (%)"]
 
 otros_indicadores = ["Alcohol, recorded per capita (15+) consumption (in litres of pure alcohol)",
                       "Estimate of daily cigarette smoking prevalence (%)",
@@ -91,13 +93,8 @@ def obtener_data(filename):
 
         # Ahora filtro, si el "GHO" está dentro de los indicadores solicitados a filtrar, entonces guardo su diccionario
         if fact_dict["GHO"] in total_indicadores:
+            datos_que_si_me_interesan.append(fact_dict)
 
-            # En el caso específico de este Gho, solo interesan estas GHECAUSES, por lo que también son filtradas
-            if fact_dict["GHO"] == "Number of deaths attributed to non-communicable diseases, by type of disease and sex":
-                if fact_dict["GHECAUSES"] == "Diabetes mellitus" or fact_dict["GHECAUSES"] == "Chronic respiratory diseases":
-                    datos_que_si_me_interesan.append(fact_dict)
-            else:
-                datos_que_si_me_interesan.append(fact_dict)
     # Retornamos una lista de los datos que si nos interesan para guardar en el archivo excel
     return datos_que_si_me_interesan
 

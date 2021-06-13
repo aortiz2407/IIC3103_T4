@@ -46,7 +46,7 @@ for pais in codigo_paises:
     archivo_carpeta.close()
     nombres_archivos_creados.append(nombre_archivo_carpeta)
 
-print("FINALIZA LA DESCARGA DE ARCHIVOS DE DATOS -------------------------------------- /n /n")
+print("FINALIZA LA DESCARGA DE ARCHIVOS DE DATOS -------------------------------------- \n \n")
 
 
 # Linea a comentar si es que se descargan de nuevo los archivos
@@ -79,8 +79,9 @@ for nombre_archivo_pais in nombres_archivos_creados:
         all_filas.append(data_a_poner)
 
 # Reviso qué es lo que se está guardando
+"""
 for elem in all_filas:
-    print(elem)
+    print(elem)"""
 
 # Imprimo la cantidad total de filas
 print("FINALMENTE TENEMOS ", len(all_filas), " CANTIDAD DE DATOS")
