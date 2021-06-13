@@ -11,7 +11,7 @@ indicadores_de_muerte = ["Number of deaths", "Number of infant deaths", "Number 
                     "Mortality rate attributed to unintentional poisoning (per 100 000 population)",
                     "Number of deaths attributed to non-communicable diseases, by type of disease and sex",
                     "Estimated road traffic death rate (per 100 000 population)",
-                    "Estimated number of road traffic deaths"]
+                    "Estimated number of road traffic deaths", "Estimates of rates of homicides per 100 000 population"]
 
 indicadores_de_peso = ["Mean BMI (crude estimate)", "Mean BMI (kg/m&#xb2;) (crude estimate)",
                        "Mean BMI (age-standardized estimate)", "Mean BMI (kg/m&#xb2;) (age-standardized estimate)",
